@@ -1,0 +1,19 @@
+{
+  "name": "burny-rush",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "@lottiefiles/lottie-interactivity": "^1.6.2",
+    "@lottiefiles/lottie-player": "^2.0.4",
+    "path": "^0.12.7"
+  }
+}
