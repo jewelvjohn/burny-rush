@@ -2,11 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <link rel="icon" type="image/svg+xml" href="/burny-rush/vite.svg" />
+        <link rel="icon" type="image/svg+xml" href="/burny-rush/icon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Burny Rush</title>
-      <script type="module" crossorigin src="/burny-rush/assets/main-B21DwEiA.js"></script>
-      <link rel="stylesheet" crossorigin href="/burny-rush/assets/main-C6ciwCkG.css">
+      <script type="module" crossorigin src="/burny-rush/assets/main-CpdjE9fY.js"></script>
+      <link rel="stylesheet" crossorigin href="/burny-rush/assets/main-B4E2Y7m0.css">
     </head>
 
     <body>
@@ -22,10 +22,11 @@
             <section id="introduction-section">
                 <h2 class="sub-header">Introduction</h2>
                 <div class="spacer"></div>
-                <p>❝What started as a college project has now evolved into a glorified indie game. 
+                <p>
+                    ❝What started as a college project has now evolved into a glorified video game demo. 
                     Initially <span class="highlight">DDA</span> using ML was the core idea. 
                     Eventually, gameplay became more important over funky features. 
-                    So, is it a typical racing game with a lower budget?!❞
+                    So, is it a typical unity racing game?!❞
                 </p>
                 <div class="spacer"></div>
             </section>
@@ -41,8 +42,7 @@
                             <a href="https://inkscape.org/" target="_blank"><span>Inkscape</span></a>
                             <a href="https://krita.org/en/" target="_blank"><span>Krita</span></a>
                             <a href="https://www.fmod.com/" target="_blank"><span>FMOD</span></a>
-                            <a href="https://assetstore.unity.com/packages/3d/environments/urban/mobile-garage-vol-2-190652" target="_blank"><span>Mobile Garage</span></a>
-                            <a href="https://github.com/mob-sakai/SoftMaskForUGUI" target="_blank"><span>SoftMask</span></a>
+                            <a href="https://developer.nvidia.com/physx-sdk" target="_blank"><span>PhysX</span></a>
                             <a href="https://www.mixamo.com/" target="_blank"><span>Mixamo</span></a>
                         </div>
                         <div class="tools">
@@ -51,8 +51,7 @@
                             <a href="https://inkscape.org/" target="_blank"><span>Inkscape</span></a>
                             <a href="https://krita.org/en/" target="_blank"><span>Krita</span></a>
                             <a href="https://www.fmod.com/" target="_blank"><span>FMOD</span></a>
-                            <a href="https://assetstore.unity.com/packages/3d/environments/urban/mobile-garage-vol-2-190652" target="_blank"><span>Mobile Garage</span></a>
-                            <a href="https://github.com/mob-sakai/SoftMaskForUGUI" target="_blank"><span>SoftMask</span></a>
+                            <a href="https://developer.nvidia.com/physx-sdk" target="_blank"><span>PhysX</span></a>
                             <a href="https://www.mixamo.com/" target="_blank"><span>Mixamo</span></a>
                         </div>
                         <div class="tools">
@@ -61,21 +60,49 @@
                             <a href="https://inkscape.org/" target="_blank"><span>Inkscape</span></a>
                             <a href="https://krita.org/en/" target="_blank"><span>Krita</span></a>
                             <a href="https://www.fmod.com/" target="_blank"><span>FMOD</span></a>
-                            <a href="https://assetstore.unity.com/packages/3d/environments/urban/mobile-garage-vol-2-190652" target="_blank"><span>Mobile Garage</span></a>
-                            <a href="https://github.com/mob-sakai/SoftMaskForUGUI" target="_blank"><span>SoftMask</span></a>
+                            <a href="https://developer.nvidia.com/physx-sdk" target="_blank"><span>PhysX</span></a>
                             <a href="https://www.mixamo.com/" target="_blank"><span>Mixamo</span></a>
                         </div>
                     </div>
                 </div>
+            </section>
+            <section id="description-section">
+                <h2 class="sub-header">Description</h2>
+                <div class="spacer"></div>
+                <div class="description-container">
+                    <h2 class="description-header">Wheel Physics</h2>
+                    <p>
+                        A vehicle in a video game is a simulated set of wheels. All other components, like engine,
+                        gearbox, clutch, differential, etc. are just imaginary mathematical formulae used to calculate 
+                        the forces & torque that are applied to these wheels. In Unity wheel physics 
+                        is implemented using <span class="highlight">Wheel Colliders</span> from PhysX SDK.
+                    </p>
+                    <p>
+                        I tried to implement a realistic/arcade-type vehicle physics in this project. Most components 
+                        from engine to ABS, were successfully implemented. Achieving proper friction and traction settings 
+                        were actually hard. I had to go through lots of different forums to understand the quirky 
+                        behaviour of wheel colliders. The vehicle SFX were implemented using <span class="highlight">FMOD.</span> This was the first 
+                        time I used it.
+                    </p>
+                    <details>
+                        <summary>Assests used</summary>
+                        <ul>
+                            <li>Fantastic City Generator - MasterPixel3D</li>
+                            <li>Vehicle Models - BadKarma</li>
+                            <li>Mobile Garage - Xiro</li>
+                        </ul>
+                    </details>
+                </div>
+                <div class="spacer"></div>
             </section>
             <section id="about-section">
                 <h2 class="sub-header">About</h2>
                 <div class="spacer"></div>
                 <div class="profile">
                     <img src="./images/profile.webp" alt="profile pic">
-                    <p>❝Hey, I'm <span class="highlight">Jewel John,</span> a game developer who is ambitiously developing 
-                        this video game. Be sure to <span class="download">download (for Windows)</span> this game and support me by 
-                        giving feedback, even though it's not even close to a finished product yet.❞
+                    <p>❝Hey, I'm <span class="highlight">Jewel John,</span> a game developer and gameplay engineer who ambitiously developed 
+                        this video game demo. Be sure to <span class="download">download (for Windows)</span> this demo and support me by 
+                        giving feedback.❞
                     </p>
                     <div class="socials"> 
                         <a href="https://www.linkedin.com/in/jewelvjohn/" target="_blank">
@@ -88,7 +115,7 @@
                             <lottie-player id="instagram" src="./lottie/instagram.json"></lottie-player>
                         </a> 
                         <a href="https://dribbble.com/jeweljohn" target="_blank">
-                            <lottie-player loop hover id="instagram-camera" src="./lottie/dribbble.json"></lottie-player>
+                            <lottie-player loop hover src="./lottie/dribbble.json"></lottie-player>
                         </a> 
                     </div>
                 </div>
