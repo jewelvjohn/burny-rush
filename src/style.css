@@ -75,7 +75,7 @@ section {
     font-family: Kanit;
     font-style: italic;
     justify-self: center;
-    font-size: clamp(2em, 10vw,4em);
+    font-size: clamp(2em, 10vw, 4em);
     line-height: 1.1;
 
     animation: fade-out linear forwards;
@@ -85,6 +85,43 @@ section {
 
     scale: 1;
     opacity: 1;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    animation: fade-in-out ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: normal;
+
+    scale: 1.5;
+    opacity: 0;
+}
+
+#description-section {
+    font-size: clamp(0.8em, 2vw, 1em);
+}
+
+.description-header {
+    margin: 0;
+    padding: 0;
+
+    font-size: clamp(1.2em, 4vw, 1.6em);
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+summary {
+    text-align: center;
+    font-weight: 500;
+}
+
+details {
+    font-size: clamp(0.8em, 2vw, 1em);
+    color: #5d85f3;
 }
 
 #landing-section {
@@ -119,7 +156,10 @@ section {
 
 p {
     max-width: 700px;
-    padding: 8px;
+    padding-inline: 8px;
+    margin-inline: 8px;
+    padding-block: 4px;
+    margin-block: 4px;
     text-align: center;
     font-size: clamp(1em, 3vw, 1.2em);
 }
@@ -139,12 +179,12 @@ p {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 4px;
-    background-color: rgb(51, 87, 187);
+    background-color: #3357bb;
     transition: 0.2s all ease-in-out;
 }
 
 .download:hover {
-    background-color: rgb(93, 133, 243);
+    background-color: #5d85f3;
 }
 
 #introduction-section p {
@@ -213,7 +253,7 @@ p {
     transition: 0.2s all ease-in-out;
 }
 .tools a:hover span {
-    background-color: rgb(195, 60, 60);
+    background-color: #3357bb;
     color: white;
 }
 
