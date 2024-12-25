@@ -3,13 +3,15 @@
     <head>
         <meta charset="UTF-8"/>
         <link rel="icon" type="image/svg+xml" href="/burny-rush/icon.svg" />
+        <!-- <link rel="preload" fetchpriority="high" as="image" href="./resources/images/loading.gif"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Burny Rush</title>
-      <script type="module" crossorigin src="/burny-rush/assets/main-CpdjE9fY.js"></script>
-      <link rel="stylesheet" crossorigin href="/burny-rush/assets/main-B4E2Y7m0.css">
+      <script type="module" crossorigin src="/burny-rush/assets/main-DvvTaWUG.js"></script>
+      <link rel="stylesheet" crossorigin href="/burny-rush/assets/main-Cizr5vtQ.css">
     </head>
 
     <body>
+        <div id="preloader"></div>
         <div class="container">
             <section id="landing-section">
                 <div class="spacer"></div>
@@ -32,6 +34,13 @@
             </section>
             <section id="gameplay-section">
                 <h2 class="sub-header">Gameplay</h2>
+                <div class="spacer"></div>
+                <div id="video-container" class="video-container" role="button">
+                    <video id="video" loop>
+                        <source src="./videos/BurnyRush Gameplay.mp4" type="video/mp4">
+                    </video>
+                    <div id="play-button" class="play-button paused"></div>
+                </div>
                 <div class="spacer"></div>
                 <div id="tools-section">
                     <h3>PROJECT TOOLBOX</h3>
@@ -88,7 +97,6 @@
                         <summary>Assests used</summary>
                         <ul>
                             <li>Fantastic City Generator - MasterPixel3D</li>
-                            <li>Vehicle Models - BadKarma</li>
                             <li>Mobile Garage - Xiro</li>
                         </ul>
                     </details>
@@ -100,9 +108,8 @@
                 <div class="spacer"></div>
                 <div class="profile">
                     <img src="./images/profile.webp" alt="profile pic">
-                    <p>❝Hey, I'm <span class="highlight">Jewel John,</span> a game developer and gameplay engineer who ambitiously developed 
-                        this video game demo. Be sure to <span class="download">download (for Windows)</span> this demo and support me by 
-                        giving feedback.❞
+                    <p>❝Hey, I'm <span class="highlight">Jewel John,</span> the game developer who is 
+                        ambitiously developing this video game.❞
                     </p>
                     <div class="socials"> 
                         <a href="https://www.linkedin.com/in/jewelvjohn/" target="_blank">
